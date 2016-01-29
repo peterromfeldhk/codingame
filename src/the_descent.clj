@@ -38,7 +38,6 @@
   (-> (update-in space-x [:x] inc-dec)
       (assoc :inc bool)))
 
-
 (defn -main [& args]
   (loop [spaceX {:x 0 :inc true} round 0 fired false]
     (if (= round 19)
